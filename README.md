@@ -6,11 +6,11 @@ Tecnologias utilizadas: PHP, HTML, CSS, MySQL
 
 Funcionalidades:
 
-    Página inicial com informações em destaque
-    Página de busca de produtos
-    Página de detalhes do produto
+    Página inicial c/ agenda em destaque
+    Página de busca de hospedagem
+    Página de detalhes de quartos
     Área de reservas de quartos
-    Painel de administração (gerenciamento de produtos, pedidos, clientes)
+    Painel de administração (gerenciamento de reservas, quartos, clientes)
     Área do cliente (login, cadastro, histórico de reservas)
 
 Estrutura do projeto:
