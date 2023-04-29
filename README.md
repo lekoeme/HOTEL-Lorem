@@ -6,7 +6,7 @@ Tecnologias utilizadas: PHP, HTML, CSS, MySQL
 
 Funcionalidades:
 
-    Página inicial com produtos em destaque
+    Página inicial com informações em destaque
     Página de busca de produtos
     Página de detalhes do produto
     Área de reservas de quartos
