@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+        <title>Login</title>
+        <link rel="stylesheet" href="../css/estilos_login.css" type="text/css">
+        <script src="http://code.jquery.com/jquery-2.2.3.min.js"></script>
+
+        <script>
+            $(document).ready(function() {
+                $("#btnConfirmar").click(function() {
+                    var nome_usuario  = $("input[name=Usuario]").val();
+                    var senha_usuario = $("input[name=Senha]").val();
+
+                    $.ajax({
+                        "url": "adm_efetuar_login.php",
+                        "dataType": "html",
+                        "data": { "Usuario":nome_usuario,
+                                  "Senha":senha_usuario },
+                        "success": function(response) { $("div#retorno").html(response);
+                                                        setTimeout("location.href = 'index.php'",5000); }
+                    });
+                });
+            });
+        </script>
+
+        <script language="JavaScript">
+            function fechar_formulario() {
+                location.href="index.php";
+            }
+        </script>
+        
+    </head>
+
+    <body>
+        <div class="login-pagina">
+            <div class="login-imagem"></div>
+                <div class="login-formulario">
+                    <form name="formLogin">
+                        <p class="login-legenda">Usuário: <input name="Usuario" id="Usuario" tabindex="1" size="20" maxlength="20" type="text"></p>
+                        <p class="login-legenda">Senha: <input name="Senha" id="Senha" tabindex="2" size="10" maxlength="10" type="password"></p>
+                        <button type="button" name="btnConfirmar" id="btnConfirmar">Confirmar</button>
+                        <button type="button" name="btnCancelar" id="btnCancelar" onclick="fechar_formulario()">Cancelar</button>
+                    </form>
+                    <div class="login-mensagem" id="retorno"></div>
+                </div>
+        </div>
+    </body>
+</html>

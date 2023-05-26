@@ -1,0 +1,24 @@
+.retorno-consulta table {
+    border-collapse: collapse;
+    border-top: 1px solid black;
+    width: 100%;
+    }
+    
+    .retorno-consulta th, td {
+    border-bottom: 1px solid black;
+    }
+    
+    .retorno-consulta th {
+    font-family: Verdana;
+    font-size: 14px;
+    font-weight: bold;
+    color: #0000FF;
+    text-align: left;
+    background-color: #FFEBAD;
+    }
+    
+    .retorno-consulta td {
+    font-family: Arial, Helvetica Sans Serif;
+    font-size: 14px;
+    background-color: #A7CFFF;
+    }
