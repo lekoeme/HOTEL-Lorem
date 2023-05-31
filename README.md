@@ -1,4 +1,6 @@
-# Nome do projeto: Hotel Lorem
+::FINISHED::
+
+Nome do projeto: Hotel Lorem
 
 Descrição: Um sistema de gerenciamento de hotel que permite aos usuários pesquisar, visualizar e reservar produtos online.
 
